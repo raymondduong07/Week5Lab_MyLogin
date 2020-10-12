@@ -28,6 +28,7 @@ public class LoginServlet extends HttpServlet {
 
         if (session.getAttribute("username") != null || session.getAttribute("password") != null) {
             response.sendRedirect("home");
+            return;
         }
 
         getServletContext().getRequestDispatcher("/WEB-INF/login.jsp")

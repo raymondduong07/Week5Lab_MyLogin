@@ -9,7 +9,7 @@
         <h1>Login</h1>
         <form action="login" method="post">
             Username:<input type="text" name="username" value=${username}><br>
-            Password:<input type="text" name="password" value=${password}><br>
+            Password:<input type="password" name="password" value=${password}><br>
             <input type="submit" value="login" name="login">
         </form>
         <p>${message}</p>
